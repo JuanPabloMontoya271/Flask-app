@@ -1,5 +1,6 @@
 from flask import Flask
 from ejemplo import hi
+from utils/functions import segmentar
 app = Flask(__name__)
 
 @app.route("/")
@@ -10,7 +11,7 @@ def api():
     return hi()
 @app.route("/api/segmentation")
 def segmentation():
-    return '<h1>here is where segmentation goes</h1>'
+    return '<h1>here is where segmentation goes</h1>', segmetar()
 @app.route("/api/post", methods = ['POST'])
 def post():
     if request.method == 'POST':
