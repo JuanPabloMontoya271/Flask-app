@@ -10,5 +10,10 @@ def api():
 @app.route("/api/segmentation")
 def segmentation():
     return '<h1>here is where segmentation goes</h1>'
+@app.route("/api/post", methods = ['POST'])
+def post():
+    if request.method == 'POST':
+        post = request.form['nm']
+        return 'The post is ', post
 if __name__ == '__main__':
     app.run(port = 9000)
