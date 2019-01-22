@@ -1,6 +1,6 @@
 from flask import Flask
 from ejemplo import hi
-from utils/functions import segmentar
+from utils.functions import segmentar
 app = Flask(__name__)
 
 @app.route("/")
