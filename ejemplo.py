@@ -1,2 +1,2 @@
 def hi():
-    print('hi')
+    return 'la clase funciona'
