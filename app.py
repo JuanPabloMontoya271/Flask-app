@@ -1,5 +1,5 @@
 from flask import Flask
-import class
+from ejemplo import hi
 app = Flask(__name__)
 
 @app.route("/")
@@ -7,7 +7,7 @@ def index():
     return '<h1>Deployed to heroku</h1>'
 @app.route("/api")
 def api():
-    class.hi()
+    hi()
     return 'hi'
 @app.route("/api/segmentation")
 def segmentation():
