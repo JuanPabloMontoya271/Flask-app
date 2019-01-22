@@ -1,2 +1,2 @@
-print('hi')
-hi =1
+def hi():
+    print('hi')

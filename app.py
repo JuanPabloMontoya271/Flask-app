@@ -7,7 +7,8 @@ def index():
     return '<h1>Deployed to heroku</h1>'
 @app.route("/api")
 def api():
-    return 'this is the api route', class.hi
+    class.hi()
+    return 'hi'
 @app.route("/api/segmentation")
 def segmentation():
     return '<h1>here is where segmentation goes</h1>'
