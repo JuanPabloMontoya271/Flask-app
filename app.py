@@ -11,7 +11,7 @@ def api():
     return hi()
 @app.route("/api/segmentation")
 def segmentation():
-    return '<h1>here is where segmentation goes</h1>', segmetar()
+    return '<h1>here is where segmentation goes</h1>', segmentar()
 @app.route("/api/post", methods = ['POST'])
 def post():
     if request.method == 'POST':
